@@ -8,9 +8,9 @@ If we want to segment gray level image with 256 levels to three segments we are 
 This brute force approach would end up with optimal solution, however computing time would be definitely high.
 Genetic algorithm searches space containing all possible solutions and obtain the best solution among all examined in much less time than brute force algorithm.
 
-<img src="https://cloud.githubusercontent.com/assets/2312761/5238428/766e35a4-78ba-11e4-93bf-c085e850b569.png" width="215px" height="215px" title="Source image"/>
-<img src="https://cloud.githubusercontent.com/assets/2312761/5238425/5abd2aea-78ba-11e4-9459-c76782c3c8e6.png" width="215px" height="215px" title="Image segmented by one threshold"/>
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239562/2737e36e-78e6-11e4-8f2c-e6515460e9c2.png" width="215px" height="215px" title="Image segmented by 6 thresholds"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5238428/766e35a4-78ba-11e4-93bf-c085e850b569.png" width="220px" height="220px" title="Source image"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5238425/5abd2aea-78ba-11e4-9459-c76782c3c8e6.png" width="220px" height="220px" title="Image segmented by one threshold"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239562/2737e36e-78e6-11e4-8f2c-e6515460e9c2.png" width="220px" height="220px" title="Image segmented by 6 thresholds"/>
 
 *The result of segmentation by genetic algorithm with population size 20 and number of iterations 30.*
 
@@ -82,17 +82,17 @@ Though segmentation of this picture looks promising, we were not able to success
 The best result can be shown at the end of this subsection. 
 We also noticed that algorithm is prone to insignificant segments (edges of shapes) with small area.
 
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239175/a63f604c-78d7-11e4-99a8-91ca7becaa40.png" width="210px" height="210px" title="Solid colors"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239175/a63f604c-78d7-11e4-99a8-91ca7becaa40.png" width="220px" height="220px" title="Solid colors"/>
 
 *Source image contains 8 different colors.*
 
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239187/b675129e-78d8-11e4-8a5d-faf4898c4997.png" width="210px" height="210px" title="The first segment"/>
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239188/ba1d9b14-78d8-11e4-8fcc-556cc89a3db5.png" width="210px" height="210px" title="The second segment"/>
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239189/bc544df6-78d8-11e4-9320-ef1d5003ffff.png" width="210px" height="210px" title="The third segment"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239187/b675129e-78d8-11e4-8a5d-faf4898c4997.png" width="220px" height="220px" title="The first segment"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239188/ba1d9b14-78d8-11e4-8fcc-556cc89a3db5.png" width="220px" height="220px" title="The second segment"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239189/bc544df6-78d8-11e4-9320-ef1d5003ffff.png" width="220px" height="220px" title="The third segment"/>
 
 *2 thresholds, 3 segments.*
 
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239265/5de327b6-78dc-11e4-91af-753c98480033.png" width="210px" height="210px" title="All segments"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239265/5de327b6-78dc-11e4-91af-753c98480033.png" width="220px" height="220px" title="All segments"/>
 
 *10 thresholds, 11 segments.*
 
@@ -104,15 +104,15 @@ Each triplet of images below represents source image, ground truth of segmentati
 As we could expect the results have not reached high.
 Correct segmentation is 2.17 % overall.
 
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239296/5a7cfdd0-78dd-11e4-92a7-46d6ccd706e3.png" width="210px" height="210px" title="Source example 1"/>
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239297/5d1f5b50-78dd-11e4-9809-e6a5e00795ef.png" width="210px" height="210px" title="Ground truth example 1"/>
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239299/6187ee32-78dd-11e4-9a17-fdd317b0209a.png" width="210px" height="210px" title="Segmentation example 1"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239296/5a7cfdd0-78dd-11e4-92a7-46d6ccd706e3.png" width="220px" height="220px" title="Source example 1"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239297/5d1f5b50-78dd-11e4-9809-e6a5e00795ef.png" width="220px" height="220px" title="Ground truth example 1"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239299/6187ee32-78dd-11e4-9a17-fdd317b0209a.png" width="220px" height="220px" title="Segmentation example 1"/>
 
 *2 thresholds, 3 segments.*
 
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239300/68d21fd2-78dd-11e4-9f0c-c32e04bac803.png" width="210px" height="210px" title="Source example 2"/>
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239301/6c8d395e-78dd-11e4-90ea-b68ad5035ecc.png" width="210px" height="210px" title="Ground truth example 2"/>
-<img src="https://cloud.githubusercontent.com/assets/2312761/5239305/70767f8a-78dd-11e4-9d89-138f1fc80731.png" width="210px" height="210px" title="Segmentation example 2"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239300/68d21fd2-78dd-11e4-9f0c-c32e04bac803.png" width="220px" height="220px" title="Source example 2"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239301/6c8d395e-78dd-11e4-90ea-b68ad5035ecc.png" width="220px" height="220px" title="Ground truth example 2"/>
+<img src="https://cloud.githubusercontent.com/assets/2312761/5239305/70767f8a-78dd-11e4-9d89-138f1fc80731.png" width="220px" height="220px" title="Segmentation example 2"/>
 
 *11 thresholds, 12 segments.*
 
