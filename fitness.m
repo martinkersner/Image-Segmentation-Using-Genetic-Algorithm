@@ -5,6 +5,7 @@
 % Computes fitness ranking for all population.
 
 function ranking = fitness(image, population, n_thresholds)
+
     ranking = [];
 
     % Convert thresholds to decimal representation

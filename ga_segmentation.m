@@ -5,19 +5,19 @@
 pkg load image
 
 % Default variables
-n_population =  10;
-n_iterations =  40;
+n_population =  20;
+n_iterations =  50;
 n_bins       = 256;
-n_thresholds =   1;
+n_thresholds =   5;
 
-% Probabilistic proportions
+% Ratios of all GA operations
 p_selection = 0.1;
 p_crossover = 0.8;
 p_mutation  = 0.1;
 assert(sum([p_selection, p_crossover, p_mutation]) == 1, 'Total sum of proportions have to be 1!');
 
 % Read image
-image = imread("images/cameraman.png");
+image = imread("images/img.png");
 
 % Convert image to gray levels
 if (size(image, 3) == 3)

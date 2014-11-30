@@ -41,12 +41,16 @@ function accept_solution(image, population, n_thresholds)
         segmentation += value*mask;
 
         % Display segments
-        figure
-        imshow(value*mask)
+        %if (i >= 2)
+        %    figure
+        %    mask_value = value*mask;
+        %    imshow(mask_value);
+        %    imwrite(mask_value, strcat(num2str(i), ".png"));
+        %endif
 
         value += segmentation_value;
     endfor
 
-    %imshow(segmentation);
+    imshow(segmentation);
 
 endfunction
